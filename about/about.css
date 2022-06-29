@@ -1,0 +1,21 @@
+.about-career, .about-outdoor {
+  margin-left: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-image {
+  width: 250px;
+  box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+}
+
+.about-para {
+  font-size:16px;
+  line-height: 1.5;
+  margin-left: 50px;
+  color: #3b454e;
+  font-size:16px;
+  display: block;
+}
+
+
