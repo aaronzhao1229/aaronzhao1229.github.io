@@ -1,9 +1,38 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>My blog</title>
+    <title>Aaron's blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./styles/main.css" rel="stylesheet">
+  </head>
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+
+    <!--side bar-->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-item">
+        <img class="profile" src="./image/profile.JPG" alt="profile">
+        <p class="name">Jian(Aaron) Zhao</p>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item" href="#">Home</a><br>
+        <a class="sidebar-nav-item" href="#">About</a><br>
+        <a class="sidebar-nav-item" href="./blog/te-houtaewa-template.html">Blogs</a>
+      </nav>
+    </div>
+
+    <!--header-->
+    <main>
+      <div class="main-head">
+        <p class="header-text"><span class='name'>Aaron's Blog </span> The blog of a programmer on web development and outdoor activities.</p>
+      </div>
+  
+      <div class="main-body">
+        <a class="blog-title" href="./blog/positioning/positioning.html">Positioning: relative, absolute, and fixed</a>
+      </div>
+    </main>
+
+
+    
   </body>
 </html>

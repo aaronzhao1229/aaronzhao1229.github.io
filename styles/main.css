@@ -1,0 +1,123 @@
+body {
+  margin: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+
+a:hover {
+  background-color: rgb(80, 143, 149);
+}
+
+a {
+  text-decoration: none;
+}
+
+.sidebar {
+  margin: 0px;
+  width: 280px;
+  height: 100%;
+  background-color: rgb(92, 194, 228);
+  float: left;
+  margin-bottom: -5000px; /* any large number will do */
+  padding-bottom: 5000px; 
+}
+
+/*
+@media screen and (min-width: 320px) and (max-width: 768px)  {
+  .sidebar {
+    background-color: rgb(188, 213, 79);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .sidebar {
+    background-color: rgb(92, 194, 228);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    background-color: aqua;
+  }  
+}
+*/
+
+.sidebar-item {
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 3em;
+}
+
+.profile {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.name {
+  margin: 5px;
+  font-size: 20px;
+  color: white;
+  font-family: Roboto, sans-serif;
+}
+.sidebar-nav-item {
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+
+.main-head {
+  display: block;
+  border-bottom: solid 1px rgb(221, 219, 219);
+  margin-left: 280px;
+  background-color: rgb(92, 194, 228);
+}
+
+.header-text {
+  margin-left: 100px;
+  padding-top: 10px;
+  color:rgb(115, 118, 119)
+}
+
+.main-body {
+  display: block;
+  margin-left: 280px;
+  
+}
+
+.blog-title {
+  font-size: 32px;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.main-para {
+  font-size:16px;
+  line-height: 1.5;
+  margin-left: 100px;
+  color: #3b454e;
+}
+.heading2 {
+  font-size:24px;
+  line-height: 1.5;
+  margin-left: 100px
+}
+
+.blog-image {
+  margin-left: 100px;
+  padding-left: 100px;
+  display: block;
+  padding-bottom: 2px;
+}
+
+
+

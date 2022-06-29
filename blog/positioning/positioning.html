@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Positioning</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="file:///Users/Z/Documents/EDA/fundation/Dev-Academy/aaronzhao1229.github.io/styles/main.css" rel="stylesheet">
+    <link href="positioning.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!--side bar-->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-item">
+        <img class="profile" src="file:///Users/Z/Documents/EDA/fundation/Dev-Academy/aaronzhao1229.github.io/image/profile.jpg" alt="profile">
+        <p class="name">Jian(Aaron) Zhao</p>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item" href="file:///Users/Z/Documents/EDA/fundation/Dev-Academy/aaronzhao1229.github.io/index.html">Home</a><br>
+        <a class="sidebar-nav-item" href="#">About</a><br>
+        <a class="sidebar-nav-item" href="./blog/te-houtaewa-template.html">Blogs</a>
+      </nav>
+    </div>
+
+   
+    <main>
+       <!--header-->
+      <div class="main-head">
+        <p class="header-text"><span class='name'>Aaron's Blog </span> The blog of a programmer on web development and outdoor activities.</p>
+      </div>
+       <!--blog title-->
+      <div class="main-body">
+        <h1 class="blog-title">Positioning: relative, absolute, and fixed</h1>
+        <p class="main-para">
+          Before diving into relative, absolute and fixed positioning, we may need to know another type of positioning: <strong>static</strong>.
+        </p>
+        <!--Static-->
+        <h2 class="heading2">static</h2>
+        <p class="main-para">
+          <strong>static</strong> is default for every single page element. <br>
+          For example, if the code of HTML and CSS is the following:
+        </p>
+        <img class="blog-image" src="./figure/html.png" alt="html">
+        <img class="blog-image" src="./figure/css-static.png" alt="css-static">
+        <p class="main-para">
+          <br>
+          The result is the following: <br>
+        </p>
+        <img class="blog-image" src="./figure/static.png" alt="static">
+
+        <!--Relative-->
+        <h2 class="heading2">relative</h2>
+        <p class="main-para">
+          <strong>relative</strong> positioning may be a confusing and misused type. What it really means is ‘relative to itself’. 
+        </p>
+        <p class="main-para">
+          An element’s default positioning is static as discussed above. If we set <em>position: relative</em> on an element but without other properties (<em>top, left, bottom or right</em>), it will have no effect on it’s positioning at all, it will be exactly as it would be if you left it as <em>position: static</em>. If we do give it positioning properties, e.g. top: 20px, it will move 20 pixels down from where it would normally be.  
+        </p>
+        <p class="main-para">
+          For example, if the code of CSS is the following, with relative positioning properties <em>top: 20px</em> and <em>left: 20px</em>:
+        </p>
+        <img class="blog-image" src="./figure/css-relative.png" alt="css-relative">
+        <p class="main-para">
+          <br>
+          The result will be the following, with the ‘example’ block moving (relative to its current position) to 20px from the top and left.  <br>
+        </p>
+        <img class="blog-image" src="./figure/relative.png" alt="relative">
+        <p class="main-para">
+          <br>
+          Noting that the layout around the ‘example’ block does not change.
+        </p>
+
+        <!--Absolute-->
+        <h2 class="heading2">absolute</h2>
+        <p class="main-para">
+          Similar to <strong>relative</strong>, the <strong>absolute</strong> positioning use the positioning attributes <em>top, left, bottom, and right</em> to set the location. However, an element with position: <strong>absolute</strong> is positioned relative to the nearest positioned parent. 
+        </p>
+        <p class="main-para">
+          For example, if the code of CSS is the following, with absolute positioning properties <em>top: 20px</em> and <em>left: 20px</em>:
+        </p>
+        <img class="blog-image" src="./figure/css-absolute.png" alt="css-absolute">
+        <p class="main-para">
+          <br>
+          The result will be the following, with the ‘example’ block moving (relative to its parent box) to 20px from the top and left.  <br>
+        </p>
+        <img class="blog-image" src="./figure/absolute.png" alt="absolute">
+        <p class="main-para">
+          <br>
+          Noting that an element with <em>position: absolute</em> is removed from the flow of elements on the page and therefore the layout around the ‘example’ block has changed (compared to the layout in the ‘static’ example).
+        </p>
+        <!--fixed-->
+        <h2 class="heading2">fixed</h2>
+        <p class="main-para">
+          A <strong>fixed</strong> position element is positioned relative to the viewport, or the browser window itself. This means it always stays in the same place even if the page is scrolled.
+        </p>
+        <p class="main-para">
+          For example, if the code of CSS is the following, with fixed positioning properties <em>top: 20px</em> and <em>left: 20px</em>:
+        </p>
+        <img class="blog-image" src="./figure/css-fixed.png" alt="css-fixed">
+        <p class="main-para">
+          <br>
+          The result will be the following, with the ‘example’ block moving to 20px from the top and right of the viewport.  <br>
+        </p>
+        <img class="blog-image" src="./figure/fixed-one.png" alt="fixed-one">
+        <p class="main-para">
+          <br>
+          When the viewport is adjusted to be smaller, the ‘example’ block is still at 20px from the top and right of the viewport. <br>
+        </p>
+        <img class="blog-image" src="./figure/fixed-two.png" alt="fixed-two">
+        <p class="main-para">
+          <br>
+          Noting that similar to <strong>absolute</strong> positioning, an element with <em>position: absolute</em> is removed from the flow of elements on the page and therefore the layout around the ‘example’ block has changed (compared to the layout in the ‘static’ example).
+        </p>
+      </div>
+    </main>
+
+
+    
+  </body>
+</html>
