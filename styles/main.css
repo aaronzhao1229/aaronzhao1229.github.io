@@ -19,12 +19,12 @@ a {
 
 .sidebar {
   margin: 0px;
-  width: 280px;
+  width: 240px;
   height: 100%;
-  background-color: rgb(92, 194, 228);
+  background-color: #02353C;
   float: left;
   margin-bottom: -5000px; /* any large number will do */
-  padding-bottom: 5000px; 
+  padding-bottom: 4000px;
 }
 
 /*
@@ -51,44 +51,49 @@ a {
   text-align: center;
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 3em;
+  padding-bottom: 1.5em;
 }
 
 .profile {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
   border-radius: 5px;
 }
 
 .name {
-  margin: 5px;
   font-size: 20px;
   color: white;
   font-family: Roboto, sans-serif;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: #3b454e 1px solid;
 }
 .sidebar-nav-item {
   display: block;
   text-align: center;
   padding: 5px;
+  color: white;
 }
 
 .main-head {
   display: block;
   border-bottom: solid 1px rgb(221, 219, 219);
-  margin-left: 280px;
-  background-color: rgb(92, 194, 228);
+  border-left: solid 1x white;
+  margin-left: 241px;
+  background-color: #02353C;
 }
 
 .header-text {
-  margin-left: 100px;
+  margin-left: 65px;
   padding-top: 10px;
-  color:rgb(115, 118, 119)
+  color:rgb(187, 190, 192)
 }
 
 .main-body {
   display: block;
-  margin-left: 280px;
+  margin-left: 240px;
   
 }
 
@@ -98,6 +103,11 @@ a {
   font-weight: 500;
   margin-left: 100px;
   margin-top: 40px;
+  color: black;
+}
+
+.blog-box {
+  
 }
 
 .main-para {
@@ -117,6 +127,14 @@ a {
   padding-left: 100px;
   display: block;
   padding-bottom: 2px;
+}
+
+footer {
+  clear: both;
+  font-size:10px;
+  line-height: 1.5;
+  margin-left: 340px;
+  color: #3b454e;
 }
 
 
