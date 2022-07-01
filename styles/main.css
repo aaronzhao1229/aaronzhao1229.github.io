@@ -34,26 +34,6 @@ a {
   background-color: #02353C; 
 }
 
-/*
-@media screen and (min-width: 320px) and (max-width: 768px)  {
-  .sidebar {
-    background-color: rgb(188, 213, 79);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .sidebar {
-    background-color: rgb(92, 194, 228);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .sidebar {
-    background-color: aqua;
-  }  
-}
-*/
-
 .sidebar-item {
   text-align: center;
   width: 100%;
@@ -184,3 +164,22 @@ a {
 }
 
 /*menu button end*/
+
+@media screen and (min-width: 320px) and (max-width: 768px)  {
+  :root {
+    --main-left-margin: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+   :root {
+    --main-left-margin: 20px;
+  }
+}
+/*
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    background-color: aqua;
+  }  
+}
+*/
