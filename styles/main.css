@@ -3,6 +3,10 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+:root {
+  --main-left-margin: 100px;
+}
+
 p {
   margin-top: 0px;
   font-size: 18px;
@@ -92,7 +96,7 @@ a {
 }
 
 .header-text {
-  margin-left: 65px;
+  margin-left: var(--main-left-margin);
   padding-top: 10px;
   color:rgb(187, 190, 192)
 }
@@ -105,7 +109,7 @@ a {
   font-size: 32px;
   line-height: 1.6;
   font-weight: 500;
-  margin-left: 100px;
+  margin-left: var(--main-left-margin);
   margin-top: 40px;
   color: black;
 }
@@ -113,24 +117,24 @@ a {
 .main-para {
   font-size:16px;
   line-height: 1.5;
-  margin-left: 100px;
+  margin-left: var(--main-left-margin);
   color: #3b454e;
 }
 .heading2 {
   font-size:24px;
   line-height: 1.5;
-  margin-left: 100px
+  margin-left: var(--main-left-margin);
 }
 
 .blog-image {
-  margin-left: 100px;
+  margin-left: var(--main-left-margin);
   padding-left: 100px;
   display: block;
   padding-bottom: 2px;
 }
 
 .about-career, .about-outdoor {
-  margin-left: 100px;
+  margin-left: var(--main-left-margin);
   display: flex;
   align-items: flex-start;
 }
