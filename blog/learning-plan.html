@@ -91,6 +91,20 @@
         </p>
        </div>
      </main>
- 
+     <!--menu button-->
+      <button class="menu-button">
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+      </button>
+    <!--menu button-->
+      <script>
+      const sidebar = document.querySelector('.sidebar');
+      const mainContent = document.querySelector('.main');
+      document.querySelector('button').onclick = function () {
+      sidebar.classList.toggle('sidebar-small');
+      mainContent.classList.toggle('main-large')
+      }
+      </script>
     </body>
 </html>

@@ -10,7 +10,7 @@
   <body>
 
     <!--side bar-->
-    <div class="sidebar" id="sidebar">
+    <div class="sidebar">
       <div class="sidebar-item">
         <img class="profile" src="./image/profile.jpeg" alt="profile">
         <p class="name">Jian(Aaron) Zhao</p>
@@ -22,6 +22,7 @@
         <br>
         <a class="sidebar-nav-item" href="./blog/learning-plan.html">Dev Academy</a>
       </nav>
+      
     </div>
 
     <!--header-->
@@ -29,7 +30,7 @@
       <div class="main-head">
         <p class="header-text"><span class='name'>Aaron's Blog </span> The blog of a programmer on web development</p>
       </div>
-  
+      
       <div class="main-body">
         <br>
         <br>
@@ -40,5 +41,21 @@
         <a class="blog-title" href="./blog/identity-values.html">Identity, Values and Strengths</a>
       </div>
     </main>
+
+    <!--menu button-->
+    <button class="menu-button">
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+    </button>
+    <!--menu button-->
+    <script>
+      const sidebar = document.querySelector('.sidebar');
+      const mainContent = document.querySelector('.main');
+      document.querySelector('button').onclick = function () {
+      sidebar.classList.toggle('sidebar-small');
+      mainContent.classList.toggle('main-large')
+    }
+    </script>
   </body>
 </html>

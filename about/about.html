@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
-    <link href="about.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
@@ -65,9 +64,23 @@
             <a class="video" href="https://www.youtube.com/watch?v=l5D6o8ievEo">Te Araroa highlights</a>
           </p>
           
-
         </div>
-  
+    </main>
     
+     <!--menu button-->
+    <button class="menu-button">
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+    </button>
+      <!--menu button-->
+    <script>
+      const sidebar = document.querySelector('.sidebar');
+      const mainContent = document.querySelector('.main');
+      document.querySelector('button').onclick = function () {
+      sidebar.classList.toggle('sidebar-small');
+      mainContent.classList.toggle('main-large')
+      }
+    </script>
   </body>
 </html>

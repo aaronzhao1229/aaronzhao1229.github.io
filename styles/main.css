@@ -8,8 +8,11 @@ p {
   font-size: 18px;
 }
 
-
 a:hover {
+  background-color: rgb(80, 143, 149);
+}
+
+button:hover {
   background-color: rgb(80, 143, 149);
 }
 
@@ -107,10 +110,6 @@ a {
   color: black;
 }
 
-.blog-box {
-  
-}
-
 .main-para {
   font-size:16px;
   line-height: 1.5;
@@ -130,6 +129,54 @@ a {
   padding-bottom: 2px;
 }
 
+.about-career, .about-outdoor {
+  margin-left: 100px;
+  display: flex;
+  align-items: flex-start;
+}
 
+.about-image {
+  width: 250px;
+  box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+}
 
+.about-para {
+  font-size:16px;
+  line-height: 1.5;
+  margin-left: 50px;
+  color: #3b454e;
+  font-size:16px;
+  display: block;
+}
+/*menu button start*/
+.menu-button {
+  position: absolute;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 1px rgba(0 ,0, 0, .3);
+  left: 95%;
+  top: 0.5rem;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background-color: #818686;
+}
 
+.menu-icon {
+  width: 28px;
+  height: 5px;
+  background-color: rgb(108, 191, 158);
+  margin: 4px 0px;
+  border-radius: 5px;
+}
+
+.sidebar-small {
+  left: -240px;
+}
+
+.main-large {
+  margin-left: 0px;
+}
+
+/*menu button end*/
