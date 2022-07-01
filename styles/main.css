@@ -77,11 +77,14 @@ a {
   color: white;
 }
 
+.main {
+  margin-left: 240px;
+}
+
 .main-head {
   display: block;
   border-bottom: solid 1px rgb(221, 219, 219);
   border-left: solid 1x white;
-  margin-left: 241px;
   background-color: #02353C;
 }
 
@@ -93,8 +96,6 @@ a {
 
 .main-body {
   display: block;
-  margin-left: 240px;
-  
 }
 
 .blog-title {
@@ -129,13 +130,6 @@ a {
   padding-bottom: 2px;
 }
 
-footer {
-  clear: both;
-  font-size:10px;
-  line-height: 1.5;
-  margin-left: 340px;
-  color: #3b454e;
-}
 
 
 
