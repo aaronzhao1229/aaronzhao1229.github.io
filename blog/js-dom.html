@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript & DOM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <!--side bar-->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-item">
+        <img class="profile" src="../image/profile.jpeg" alt="profile">
+        <p class="name">Jian(Aaron) Zhao</p>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item" href="../index.html">Home</a><br>
+        <a class="sidebar-nav-item" href="../about/about.html">About</a><br>
+        <a class="sidebar-nav-item" href="../blog/positioning.html">Tech Blog</a>
+        <br>
+        <a class="sidebar-nav-item" href="../blog/learning-plan.html">Dev Academy</a>
+      </nav>
+    </div>
+
+   
+    <main class="main">
+       <!--header-->
+      <div class="main-head">
+        <p class="header-text"><strong>Aaron's Blog</strong> The blog of a programmer on web development</p>
+      </div>
+       <!--blog title-->
+      <div class="main-body">
+        <h1 class="blog-title">JavaScript and DOM</h1>
+      
+         <!--Q&A-->
+         <p class="main-para">
+           <strong>An analogy to describe JavaScript and its relationship to HTML and CSS.</strong>
+         </p>
+         <p class="main-para">
+          If we consider a website as a building, HTML is the structure of the building, CSS is the interior and exterior decoration of the building and JavaScript is the actual functions that visitors can perform in each building.
+         </p>
+
+         <!--Q&A-->
+         <p class="main-para">
+          <strong>Explain control flow and loops using an example process from everyday life.</strong>
+        </p>
+        <p class="main-para">
+          The <strong><em>control flow</em></strong> is the order in which the computer executes statements in a script. Code is run from the first line to the last line in the file unless the computer runs across the structures that change the control flow, such as loops.
+          <br>
+          <strong><em>Loops</em></strong> are used in JavaScript to perform repeated tasks based on a condition.
+          <br>
+          The control flow is like the activities we do in the order every day: we do things one by one in the order, (such as wake up, brush our teeth, have breakfast, go to work, have lunch, go to work, have dinner, do some exercises and the like). The loop is like one activity (which we need to repeat doing something) on the day. For example, we do ten groups of sit-ups for exercises in the evening. We repeat it one group by one group. 
+        </p>
+        <!--Q&A-->
+        <p class="main-para">
+          <strong>Describe what the DOM is and an example of how you might interact with it.</strong>
+        </p>
+        <p class="main-para">
+          The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. 
+        </p>
+        <p class="main-para">
+          The DOM represents the HTML document as nodes and objects so that programming languages can interact with the page. It provides the missing link that ties your HTML and CSS with JavaScript.  
+        </p>
+        <p class="main-para">
+          For example, the code in the HTML file is the following:  
+        </p>
+        <img class="blog-image" src="./js-dom/html.png" alt="html">
+        <br>
+        <p class="main-para">
+          The HTML DOM model is constructed as a tree of objects:  
+        </p>
+        <img class="blog-image" src="./js-dom/tree.png" alt="dom tree">
+        <br>
+        <p class="main-para">
+          The JavaScript code is the following:  
+        </p>
+        <img class="blog-image" src="./js-dom/javascript.png" alt="js code">
+        <br>
+        <p class="main-para">
+          The first two lines grab the div elements by classes, and the last two lines assign the new values to the div element and show them on the web.  
+        </p>
+
+        <!--Q&A-->
+        <p class="main-para">
+          <strong>Explain the difference between accessing data from arrays and objects.</strong>
+        </p>
+        <p class="main-para">
+          <strong><em>Arrays</em></strong> store the data in an ordered collection in which the data can be accessed using a numerical index, <em>array[index]</em>
+        </p>
+        <p class="main-para">For example:</p>
+        <img class="blog-image" src="./js-dom/array.png" alt="array">
+        <br>
+        <p class="main-para">
+          To access the values in <strong><em>Objects</em></strong>, we can either use a dot operator followed by key name <em>obj.key</em> or a square bracket along with key in string format <em>obj['key']</em> to access the value.
+        </p>
+        <p class="main-para">
+          To access the keys in <strong><em>Objects</em></strong>, we can use <em>Object.keys()</em> function which returns an array of strings containing all of the object's keys, sorted by order of appearance.
+        </p>
+        <p class="main-para">For example:</p>
+        <img class="blog-image" src="./js-dom/object.png" alt="object">
+        <br>
+        
+        <!--Q&A-->
+        <p class="main-para">
+          <strong>Explain what functions are and why they are helpful.</strong>
+        </p>
+        <p class="main-para">
+          Functions are self-contained modules of code that accomplish a specific task. Functions usually take in data, process it, and return a result. Once a function is written, it can be used over and over again. Functions can be called from the inside of other functions. 
+          <ul class="main-para">
+            <li>Functions allow us to reuse code wherever it is required rather than rewriting it.</li>
+            <li>Functions allow us to test small parts of our program in isolation from the rest.</li>
+            <li>A variable in one function can only work in the function where the variable is. Function 1 can use a variable called i while Function 2 can also use a variable called i and they are not relavant. Each variable i only works when the computer is executing the given function.</li>
+          </ul>
+        </p>
+       </div>
+    </main>
+    <!--menu button-->
+    <button class="menu-button">
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+    </button>
+    <!--menu button-->
+    <script>
+    const sidebar = document.querySelector('.sidebar');
+    const mainContent = document.querySelector('.main');
+    document.querySelector('button').onclick = function () {
+    sidebar.classList.toggle('sidebar-small');
+    mainContent.classList.toggle('main-large')
+    }
+    </script>
+    
+  </body>
+</html>
