@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neuroplasticity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <!--side bar-->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-item">
+        <img class="profile" src="../image/profile.jpeg" alt="profile">
+        <p class="name">Jian(Aaron) Zhao</p>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item" href="../index.html">Home</a><br>
+        <a class="sidebar-nav-item" href="../about/about.html">About</a><br>
+        <a class="sidebar-nav-item" href="../blog/positioning.html">Tech Blog</a>
+        <br>
+        <a class="sidebar-nav-item" href="../blog/learning-plan.html">Dev Academy</a>
+      </nav>
+    </div>
+
+   
+    <main class="main">
+       <!--header-->
+      <div class="main-head">
+        <p class="header-text"><strong>Aaron's Blog</strong> The blog of a programmer on web development</p>
+      </div>
+       <!--blog title-->
+      <div class="main-body">
+        <h1 class="blog-title">Neuroplasticity and Growth Mindset</h1>
+      
+         <!--Q&A-->
+         <h2 class="heading2">Neuroplasticity</h2>
+         <p class="main-para">
+           <strong>Discuss how understanding the principles of neuroplasticity benefits people.</strong>
+         </p>
+         <p class="main-para">
+          Understanding the principles of neuroplasticity will make people understand why 'practice makes permanent'. Therefore, if people want to improve their skills, they can keep practising. This also gives directions and motivations to people who need to recover from stroke, injury and mental health problems. 
+         </p>
+
+         <!--Q&A-->
+         <p class="main-para">
+          <strong>Discuss how you might engage with the principles of neuroplasticity for your benefit.</strong>
+        </p>
+        <p class="main-para">
+          Firstly, to improve my coding skills, I will keep practising and build muscle memories.
+          <br>
+          Secondly, to improve EQ, I will keep practising mindfulness/meditation and conscious listening to build up mental habit.  
+        </p>
+        <!--Q&A-->
+        <p class="main-para">
+          <strong>What are some of the ways to increase your neuroplasticity?</strong>
+        </p>
+        <p class="main-para">
+          <ol class="main-para">
+            <li>Find clarity.</li>
+            <li>Set meaningful goals.</li>
+            <li>Take micro-steps.</li>
+            <li>Adopt a growth mindset.</li>
+            <li>Practice mindfulness.</li>
+            <li>Carefully select your circle of influence.</li>
+            <li>Prioritize an exercise routine.</li>
+            <li>Stop procrastinating.</li>
+            <li>Raise your standards.</li>
+          </ol> 
+        </p>
+        <p class="main-para">
+          The following resource is helpful to understand how to increase your neuroplasticity: 
+          <a href="https://secondwindmovement.com/neuroplasticity/">A 9-Step Guide to Increase Your Neuroplasticity and Growth Experiences</a>
+        </p>
+        
+        <!--Q&A-->
+        <h2 class="heading2">Growth Mindset</h2>
+        <p class="main-para">
+          <strong>Discuss what it is and why it is relevant.</strong>
+        </p>
+        <p class="main-para">
+          A growth mindset means that you thrive on challenges, and don’t consider failure as a way to describe yourself but as a springboard for growth and developing your abilities. Your intelligence and talents are all susceptible to growth.
+          <br>
+          It is relevant because it can help us overcome obstacles we may face when learning something new. Growth mindsets understand the importance of persistence and determination.
+          <br>
+          By changing the way we think, we can change the way we learn. Knowing that our talents and intelligence can be developed allows us to explore, experience, and achieve more in life.
+        </p>
+
+        <!--Q&A-->
+        <p class="main-para">
+         <strong>In this exploration, did anything surprise you? Change for you?</strong>
+        </p>
+        <p class="main-para">
+          I used to consider a failure really frustrating and always avoid it. If it came, I was really upset. However, in this exploration, it makes me think I should consider failure as a step toward growth. My goal is to grow and failure is a step to growth. Then I should not be upset by the failure.  
+        </p>
+       <!--Q&A-->
+        <p class="main-para">
+         <strong>How will you integrate growth mindset into your learning journey?</strong>
+        </p>
+        <p class="main-para">
+          I can imagine there will be a lot of bugs in the codes I write. Sometimes it could be really frustrating, but I will try my best to consider them in a growth mindset way and as a step to the growth of my coding skills.  
+        </p>
+        <p class="main-para">
+         The following resource is helpful to understand how to develop a growth mindset: 
+         <a href="https://www.wgu.edu/blog/what-is-growth-mindset-8-steps-develop-one1904.html">8-Step to develop a growth mindset</a>
+        </p>
+
+        <!--Q&A-->
+        <h2 class="heading2">Blend with learning plan and strategies</h2>
+        <p class="main-para">
+          <strong>Reflect and discuss how these understandings may shape or influence your learning plan and strategy.</strong>
+        </p>
+        <p class="main-para">
+          These understandings will make more practices involved in my learning strategy. 
+          Also, when I face obstacles, I will deal with them more positively, rather than just avoiding them.
+        </p>
+
+       </div>
+    </main>
+    <!--menu button-->
+    <button class="menu-button">
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+    </button>
+    <!--menu button-->
+    <script>
+    const sidebar = document.querySelector('.sidebar');
+    const mainContent = document.querySelector('.main');
+    document.querySelector('button').onclick = function () {
+    sidebar.classList.toggle('sidebar-small');
+    mainContent.classList.toggle('main-large')
+    }
+    </script>
+    
+  </body>
+</html>
