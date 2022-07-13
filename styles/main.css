@@ -5,11 +5,13 @@ body {
 
 :root {
   --main-left-margin: 100px;
-  --blog-title-font-size: 24px;
+  --blog-title-font-size: 20px;
   --heading2-font-size: 20px;
   --main-para-font-size: 16px;
   --about-img-width: 250px;
   --img-padding-left: 100px;
+  --index-main-left-margin: 50px;
+  --index-two-parts-border-width: max-content;
 }
 
 p {
@@ -90,6 +92,30 @@ a {
   display: block;
 }
 
+.tech-blog, .core-blog {
+  margin-top: 40px;
+  margin-left: var(--main-left-margin);
+  margin-right: 20px;
+  border: outset 1px rgb(130, 215, 208);
+  box-shadow: 5px 10px 15px rgb(156, 164, 156);
+  border-radius: 10px;
+  background-image: linear-gradient(145deg, rgb(130, 215, 208, 0), rgb(130, 215, 208, 1))
+}
+
+.index-blog-title {
+  text-decoration: none;
+  font-size: var(--blog-title-font-size);
+  line-height: 1.6;
+  font-weight: 500;
+  margin-left: var(--index-main-left-margin);
+  color: black;
+}
+
+.index-two-parts {
+  width: var(--index-two-parts-border-width);
+  border-bottom: solid 1px rgb(130, 215, 208);
+}
+
 .blog-title {
   font-size: var(--blog-title-font-size);
   line-height: 1.6;
@@ -97,22 +123,14 @@ a {
   margin-left: var(--main-left-margin);
   color: black;
 }
-.tech-blog, .core-blog {
-  margin-top: 40px;
-  margin-left: var(--main-left-margin);
-  margin-right: 20px;
-  background-color: rgb(211, 230, 186);
-  border: solid 1px rgb(211, 230, 186);
-  box-shadow: 5px 10px 15px rgb(156, 164, 156);
-  border-radius: 10px;
-}
 
 .main-para {
-  font-size:var(--main-para-font-size);
+  font-size: var(--main-para-font-size);
   line-height: 1.5;
   margin-left: var(--main-left-margin);
   color: #3b454e;
 }
+
 .heading2 {
   font-size: var(--heading2-font-size);
   line-height: 1.5;
@@ -183,17 +201,19 @@ a {
 @media screen and (min-width: 320px) and (max-width: 768px)  {
   :root {
     --main-left-margin: 20px;
-    --blog-title-font-size: 20px;
+    --blog-title-font-size: 18px;
     --heading2-font-size: 16px;
     --main-para-font-size: 12px;
     --about-img-width: 150px;
     --img-padding-left: 10px;
+    --index-main-left-margin: 20px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
    :root {
     --main-left-margin: 20px;
+    --index-main-left-margin: 20px;
   }
 }
 
@@ -205,5 +225,6 @@ a {
     --main-para-font-size: 12px;
     --about-img-width: 50px;
     --img-padding-left: 5px;
+    --index-main-left-margin: 10px;
   }
 }
