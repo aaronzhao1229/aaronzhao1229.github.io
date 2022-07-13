@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Problem solving</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <!--side bar-->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-item">
+        <img class="profile" src="../image/profile.jpeg" alt="profile">
+        <p class="name">Jian(Aaron) Zhao</p>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item" href="../index.html">Home</a><br>
+        <a class="sidebar-nav-item" href="../about/about.html">About</a><br>
+        <a class="sidebar-nav-item" href="../blog/positioning.html">Tech Blog</a>
+        <br>
+        <a class="sidebar-nav-item" href="../blog/learning-plan.html">Dev Academy</a>
+      </nav>
+    </div>
+
+   
+    <main class="main">
+       <!--header-->
+      <div class="main-head">
+        <p class="header-text"><strong>Aaron's Blog</strong> The blog of a programmer on web development</p>
+      </div>
+       <!--blog title-->
+      <div class="main-body">
+        <h1 class="blog-title">Problem solving</h1>
+        <p class="main-para">
+          This blog tells my stories about problem solving.
+        </p>
+        <!--a simle problem-->
+        <h2 class="heading2">A simple problem</h2>
+        <p class="main-para">
+          I got a simple problem when I progressed JS-Gradebook challenge.
+        </p>
+        <p class="main-para">
+          After finishing the basic challenge, an error about a function appeared in the stretch material. The stretch material was not mentioned anywhere, and I was confused about the function's aim. 
+        </p>
+        <p class="main-para">
+          I wanted to ask for help on Discord. After running through the chat history in the tech-questions channel, I realised someone else had asked this question. An instructor already clarified the aim of the function. Then I wrote the code, and it passed. 
+        </p>
+        <p class="main-para">
+          I felt confused throughout the process as the stretch material was not mentioned until an error appeared. 
+        </p>
+        <p class="main-para">
+          What I learned from this experience is that I should ask peers or coaches for clarification if something is not clear. 
+        </p>
+        <!--a simle problem-->
+        <h2 class="heading2">Elegantly solved a problem</h2>
+        <p class="main-para">
+          I got a problem when I progressed the FizzBuzz challenge. 
+        </p>
+        <p class="main-para">
+          FizzBuzz is a classic programming exercise. The challenge asked us to write a program that prints out each number from the given numbers but for multiples of 3, print 'Fizz' instead of the number, and for multiples of 5, print 'Buzz'. For numbers that are multiples of both 3 and 5, print 'FizzBuzz'.
+        </p>
+        <p class="main-para">
+          For example, given an array of numbers [1, 2, 3, 8, 10, 13, 15], it should print out [1, 2, Fizz, 8, Buzz, 13, FizzBuzz]. 
+        </p>
+        <p class="main-para">
+          However, when I tested the code, an error showed up.
+        </p>
+        <img class="blog-image" src="./problem-solving/code.png" alt="code" title="Code">
+        <img class="blog-image" src="./problem-solving/error.png" alt="error" title="Error">
+        <p class="main-para">
+          <br>
+          In the test example, given an array of numbers [1, 5], it printed out [1, 5] rather than the correct result [1, Buzz].
+        </p>
+        <p class="main-para">
+          After reading the error message, it looked like the number 5 was not progressed. I used the 'for' loop in my code to progress every number in the array. So I guessed there might be something wrong with the loop. Then I used console.log() to check if every parameter returned the correct value. This made me realise the parameter i only return 0; however, in the loop, i should return 0 and then 1. This proved that the 'for' loop did not correctly. 
+        </p>
+        <p class="main-para">
+          At that moment, I was confused why a simple 'for' loop could not work, but I could still not figure out how to fix it, which upset me.   
+        </p>
+        <p class="main-para">
+          Then I used the rubber ducky method to verbalise the purpose of every line of the code. When I reached the last line of “return arrayParameter”, I realised it was in the 'for' loop. This stopped the code from running after processing the first number in the array. In other words, the second number was not progressed and returned to the original number in the array. So I moved the 'return arrayParameter' out of the 'for' loop, and it worked. Happy I made it after all the efforts. 
+        </p>
+        <img class="blog-image" src="./problem-solving/fixedcode.png" alt="fixed-code">
+        <p class="main-para">
+          <br>
+          From this experience, technically, I learned more about the relationship between the 'for' loop and 'return' (which will break the loop) and next time, I should be more careful with the location of 'return'. Another thing I learned is that the rubber ducky method could be beneficial to make you realise the error.
+        </p>
+        
+        <!--Reflection-->
+        <h2 class="heading2">Reflect on how confident you feel using the problem-solving techniques/processes</h2>
+        <p class="main-para">
+          It turns out that every time when there is a problem, I always use the following problem-solving techniques/processes in which I am more confident: 
+        </p>
+        <ul class="main-para">
+          <li>Pseudocode</li>
+          <li>Trying something</li>
+          <li>Reading error messages</li>
+          <li>Console.logging</li>
+          <li>Googling</li>
+          <li>Improving your process with reflection</li>
+        </ul>
+        <p class="main-para">
+          If I cannot figure out the reason with the above techniques, then I will use the following, which I am less confident in however I am comfortable to use:  
+          <ul class="main-para">
+            <li>Rubber ducky method</li>
+            <li>Asking your peers for help</li>
+            <li>Asking coaches for help</li>
+          </ul>
+        </p>
+      </div>
+    </main>
+    <!--menu button-->
+    <button class="menu-button">
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+    </button>
+    <!--menu button-->
+    <script>
+    const sidebar = document.querySelector('.sidebar');
+    const mainContent = document.querySelector('.main');
+    document.querySelector('button').onclick = function () {
+    sidebar.classList.toggle('sidebar-small');
+    mainContent.classList.toggle('main-large')
+    }
+    </script>
+    
+  </body>
+</html>
