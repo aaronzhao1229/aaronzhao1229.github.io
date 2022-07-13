@@ -3,6 +3,17 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-size: var(--main-para-font-size);
+  margin-left: var(--main-left-margin)
+}
+
 :root {
   --main-left-margin: 100px;
   --blog-title-font-size: 20px;
@@ -11,7 +22,6 @@ body {
   --about-img-width: 250px;
   --img-padding-left: 100px;
   --index-main-left-margin: 50px;
-  --index-two-parts-border-width: max-content;
 }
 
 p {
@@ -27,7 +37,7 @@ button:hover {
   background-color: rgb(80, 143, 149);
 }
 
-a {
+a:link, a:visited {
   text-decoration: none;
 }
 
@@ -71,6 +81,14 @@ a {
   color: white;
 }
 
+.sidebar-reserve {
+  font-size: 12px;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
 .main {
   margin-left: 240px;
 }
@@ -99,11 +117,24 @@ a {
   border: outset 1px rgb(130, 215, 208);
   box-shadow: 5px 10px 15px rgb(156, 164, 156);
   border-radius: 10px;
-  background-image: linear-gradient(145deg, rgb(130, 215, 208, 0), rgb(130, 215, 208, 1))
+  background-image: linear-gradient(-45deg, rgb(130, 215, 208, 0), rgb(130, 215, 208, 1)) 
+}
+
+/* background picture */
+.tech-blog::after {
+  content: " ";
+  background-image: url(../image/tech.jpg);
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .index-blog-title {
-  text-decoration: none;
   font-size: var(--blog-title-font-size);
   line-height: 1.6;
   font-weight: 500;
@@ -112,9 +143,15 @@ a {
 }
 
 .index-two-parts {
-  width: var(--index-two-parts-border-width);
-  border-bottom: solid 1px rgb(130, 215, 208);
+  width: max-content;
+  border-bottom: solid 1px rgb(69, 115, 111);
+  color: white;
 }
+
+.index-link-title {
+  color: black;
+}
+
 
 .blog-title {
   font-size: var(--blog-title-font-size);
