@@ -9,6 +9,7 @@ body {
   --heading2-font-size: 20px;
   --main-para-font-size: 16px;
   --about-img-width: 250px;
+  --img-padding-left: 100px;
 }
 
 p {
@@ -112,15 +113,17 @@ a {
 
 .blog-image {
   margin-left: var(--main-left-margin);
-  padding-left: 100px;
+  padding-left: var(--img-padding-left);
   display: block;
   padding-bottom: 2px;
+  max-width: 100%;
 }
 
 .about-career, .about-outdoor {
   margin-left: var(--main-left-margin);
   display: flex;
   align-items: flex-start;
+  
 }
 
 .about-image {
@@ -133,7 +136,6 @@ a {
   line-height: 1.5;
   margin-left: 50px;
   color: #3b454e;
-  font-size:16px;
   display: block;
 }
 /*menu button start*/
@@ -145,7 +147,7 @@ a {
   border-radius: 5px;
   box-shadow: 0px 1px 4px 1px rgba(0 ,0, 0, .3);
   left: 95%;
-  top: 0.5rem;
+  top: 0.3rem;
   transform: translateX(-50%);
   cursor: pointer;
   background-color: #818686;
@@ -172,11 +174,27 @@ a {
 @media screen and (min-width: 320px) and (max-width: 768px)  {
   :root {
     --main-left-margin: 20px;
+    --blog-title-font-size: 20px;
+    --heading2-font-size: 16px;
+    --main-para-font-size: 12px;
+    --about-img-width: 150px;
+    --img-padding-left: 10px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
    :root {
     --main-left-margin: 20px;
+  }
+}
+
+@media screen and (max-width: 320px)  {
+  :root {
+    --main-left-margin: 10px;
+    --blog-title-font-size: 16px;
+    --heading2-font-size: 14px;
+    --main-para-font-size: 12px;
+    --about-img-width: 50px;
+    --img-padding-left: 5px;
   }
 }
