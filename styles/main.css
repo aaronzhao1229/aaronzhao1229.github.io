@@ -5,6 +5,10 @@ body {
 
 :root {
   --main-left-margin: 100px;
+  --blog-title-font-size: 28px;
+  --heading2-font-size: 20px;
+  --main-para-font-size: 16px;
+  --about-img-width: 250px;
 }
 
 p {
@@ -86,7 +90,7 @@ a {
 }
 
 .blog-title {
-  font-size: 32px;
+  font-size: var(--blog-title-font-size);
   line-height: 1.6;
   font-weight: 500;
   margin-left: var(--main-left-margin);
@@ -95,13 +99,13 @@ a {
 }
 
 .main-para {
-  font-size:16px;
+  font-size:var(--main-para-font-size);
   line-height: 1.5;
   margin-left: var(--main-left-margin);
   color: #3b454e;
 }
 .heading2 {
-  font-size:24px;
+  font-size: var(--heading2-font-size);
   line-height: 1.5;
   margin-left: var(--main-left-margin);
 }
@@ -120,12 +124,12 @@ a {
 }
 
 .about-image {
-  width: 250px;
+  width: var(--about-img-width);
   box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
 }
 
 .about-para {
-  font-size:16px;
+  font-size: var(--main-para-font-size);
   line-height: 1.5;
   margin-left: 50px;
   color: #3b454e;
