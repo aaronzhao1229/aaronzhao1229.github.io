@@ -97,8 +97,14 @@ a {
   margin-left: var(--main-left-margin);
   color: black;
 }
-.blog-box {
+.tech-blog, .core-blog {
   margin-top: 40px;
+  margin-left: var(--main-left-margin);
+  margin-right: 20px;
+  background-color: rgb(211, 230, 186);
+  border: solid 1px rgb(211, 230, 186);
+  box-shadow: 5px 10px 15px rgb(156, 164, 156);
+  border-radius: 10px;
 }
 
 .main-para {
@@ -111,6 +117,7 @@ a {
   font-size: var(--heading2-font-size);
   line-height: 1.5;
   margin-left: var(--main-left-margin);
+ 
 }
 
 .blog-image {
