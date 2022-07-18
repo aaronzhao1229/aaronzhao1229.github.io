@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <title>Emotional Intelligence</title>
+    </head>
+    <body>
+         <!--side bar-->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-item">
+          <img class="profile" src="../image/profile.jpeg" alt="profile">
+          <p class="name">Jian(Aaron) Zhao</p>
+        </div>
+        <nav class="sidebar-nav">
+          <a class="sidebar-nav-item" href="../index.html">Home</a><br>
+          <a class="sidebar-nav-item" href="../about/about.html">About</a><br>
+          <a class="sidebar-nav-item" href="../blog/positioning.html">Tech Blog</a>
+          <br>
+          <a class="sidebar-nav-item" href="../blog/learning-plan.html">Dev Academy</a>
+        </nav>
+        <div>
+          <p class="sidebar-reserve">© 2022. All rights reserved.</p>
+        </div>
+      </div>
+      <main class="main">
+        <!--header-->
+       <div class="main-head">
+         <p class="header-text"><strong>Aaron's Blog</strong> The blog of a programmer on web development</p>
+       </div>
+        
+       <div class="main-body">
+          <!--blog title-->
+         <h1 class="blog-title">Emotional Intelligence</h1>
+         <!--Q&A-->
+         <p class="main-para">
+           <strong>What is Emotional Intelligence?</strong>
+         </p>
+         <p class="main-para">
+          Emotional intelligence is one's capacity to perceive, process and regulate emotional information accurately and effectively, both within oneself and in others and to use this information to guide one's thinking and actions and to influence those of others. 
+         </p>
+         <!--Q&A-->
+         <p class="main-para">
+          <strong>How is it different to IQ?</strong>
+        </p>
+        <p class="main-para">
+          EQ is the ability to perceive, evaluate and control emotions, while IQ is basically a number representing a person's reasoning ability.
+        </p>
+        <!--Q&A-->
+        <p class="main-para">
+          <strong>Why is it important?</strong>
+        </p>
+        <p class="main-para">
+          Having a high emotional intelligence allows you to empathise with others, communicate effectively, and be both self and socially aware. How we respond to ourselves and others impacts our home and work environments. Living in this world means interacting with many different types of people and constant change and surprises. Being emotionally intelligent is key to how you respond to what life gives us. It's also a key component of compassion and understanding the deeper reasons behind other people's actions.
+        </p>
+       </div>
+     </main>
+     <!--menu button-->
+      <button class="menu-button">
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+      </button>
+    <!--menu button-->
+      <script>
+      const sidebar = document.querySelector('.sidebar');
+      const mainContent = document.querySelector('.main');
+      document.querySelector('button').onclick = function () {
+      sidebar.classList.toggle('sidebar-small');
+      mainContent.classList.toggle('main-large')
+      }
+      </script>
+    </body>
+</html>
