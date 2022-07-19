@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <title>Foundation reflection</title>
+    </head>
+    <body>
+         <!--side bar-->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-item">
+          <img class="profile" src="../image/profile.jpeg" alt="profile">
+          <p class="name">Jian(Aaron) Zhao</p>
+        </div>
+        <nav class="sidebar-nav">
+          <a class="sidebar-nav-item" href="../index.html">Home</a><br>
+          <a class="sidebar-nav-item" href="../about/about.html">About</a><br>
+          <a class="sidebar-nav-item" href="../blog/positioning.html">Tech Blog</a>
+          <br>
+          <a class="sidebar-nav-item" href="../blog/learning-plan.html">Dev Academy</a>
+        </nav>
+        <div>
+          <p class="sidebar-reserve">© 2022. All rights reserved.</p>
+        </div>
+      </div>
+      <main class="main">
+        <!--header-->
+       <div class="main-head">
+         <p class="header-text"><strong>Aaron's Blog</strong> The blog of a programmer on web development</p>
+       </div>
+        
+       <div class="main-body">
+          <!--blog title-->
+         <h1 class="blog-title">Foundation Reflection</h1>
+         <!--Q&A-->
+         <p class="main-para">
+           <strong>What are three new things you have learnt about yourself and your ego due to the core learning?</strong>
+         </p>
+         <p class="main-para">
+            <ul class="main-para">
+              <li>Growth mindset: After exploring growth mindset, I realised that I could treat the bugs as a part to growth. I applied to the following tech part, and it worked!</li>
+              <li>My top 3 core values are achievement, self-improvement and adventurousness.</li>
+              <li>Conscious listening: it feels good to fully understand others and have someone to fully listen to you. I always thought I was a bad listener. However, it improved with conscious listening practice.</li>
+            </ul>
+         </p>
+         <!--Q&A-->
+         <p class="main-para">
+          <strong>What are the role of values, empathy, and self-awareness in learning and programming?</strong>
+        </p>
+        <p class="main-para">
+          Values: Learning and programming is full of hard work on achieving what we are aiming to. My top 2 values are achievement and self-improvement. This helps me on my learning and programming. 
+        </p>
+        <p class="main-para">
+          Empathy: Good empathy helps teamwork during learning and programming as it helps people understand more about each other.
+        </p>
+        <!--Q&A-->
+        <p class="main-para">
+          <strong>What has surprised you the most about core learning?</strong>
+        </p>
+        <p class="main-para">
+          I thought EQ might be something unchangeable. However, through the core learning, I realised EQ could be changed with some practice, such as meditation/mindfulness. This surprised me and gave me hope to improve my EQ.
+        </p>
+        <!--Q&A-->
+        <p class="main-para">
+          <strong>What were the most challenging aspects of the core learning?</strong>
+        </p>
+        <p class="main-para">
+          At the beginning of the course, I thought this was only a tech course. However, as the course went, there are some core learning, which was out of my expectation. The most challenging part to me was to convince myself to deal with it.
+        </p>
+        <!--Q&A-->
+        <p class="main-para">
+          <strong>Why do you think we, a programming school, are spending so much time focusing on core learning in a web development Bootcamp course?</strong>
+        </p>
+        <p class="main-para">
+          Programming could be full of bugs which might make people frustrated and unhappy. Core learning helps us consider as a path to growth and deal with it better with meditation and the like. Team work is an important part for a web developer. Improving human skills also helps how to work with others effectively. 
+        </p>
+        <!--Q&A-->
+        <p class="main-para">
+          <strong>Does the time you spent studying core learning here feel like a waste of time? Should you have just used that time to practise programming instead?</strong>
+        </p>
+        <p class="main-para">
+          No, I don’t think it is a waste of time although it was struggling for me to start the core learning at the beginning. This learning not only helps the career as a programmer, but also the real life. 
+        </p>
+        <p class="main-para">
+          I think it is really helpful in the real life if you are familiar with your own values and identity. Sometimes we are not happy with something in our lives and we will try to figure out why we are not happy. If we think through our values and identity, sometimes we can see the conflicts between what happened and our values. This will help us to understand what we need and figure out the next step, rather than just blaming other people.
+        </p>
+        <p class="main-para">
+          Regarding other aspects of EQ, neuroplasticity, growth mindset, conscious listening and etc, understanding these will help us connect better with others and be happy in the real life.
+        </p>
+       </div>
+     </main>
+     <!--menu button-->
+      <button class="menu-button">
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+      </button>
+    <!--menu button-->
+      <script>
+      const sidebar = document.querySelector('.sidebar');
+      const mainContent = document.querySelector('.main');
+      document.querySelector('button').onclick = function () {
+      sidebar.classList.toggle('sidebar-small');
+      mainContent.classList.toggle('main-large')
+      }
+      </script>
+    </body>
+</html>
